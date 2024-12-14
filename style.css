@@ -100,7 +100,7 @@ button.dark-mode:hover {
 
 /* Section Title */
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #3498db;
     border-bottom: 3px solid #3498db;
     display: inline-block;
@@ -297,12 +297,6 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #2980b9;
-}
-
-footer {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
 }
 
 /* Dark mode styles */
