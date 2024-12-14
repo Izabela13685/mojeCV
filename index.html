@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Maja Szumaj</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Navigation bar -->
     <header class="sticky-header">
         <nav>
             <a href="#about">O mnie</a>
@@ -18,11 +15,10 @@
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Kontakt</a>
             <a href="#education">Wykształcenie</a>
-            <button id="toggle-theme" class="theme-toggle">🌙 Tryb ciemny</button>
+            <button id="toggle-theme">🌙 Tryb ciemny</button>
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1>Cześć, jestem <span>Maja Szumaj</span></h1>
@@ -34,21 +30,15 @@
         </div>
     </section>
 
-    <!-- Main Content -->
     <main>
-        <!-- Sekcja O mnie -->
         <section id="about" class="about">
             <h2>O mnie</h2>
             <div class="about-container">
                 <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Zdjęcie profilowe" class="profile">
-                <p>
-                    Jestem pasjonatką nowych technologii i projektowania UX/UI. Pracuję nad nowoczesnymi aplikacjami i
-                    optymalizacją procesów biznesowych. Po pracy lubię zgłębiać wiedzę o sztucznej inteligencji.
-                </p>
+                <p>Jestem pasjonatką nowych technologii i projektowania UX/UI. Pracuję nad nowoczesnymi aplikacjami i optymalizacją procesów biznesowych. Po pracy lubię zgłębiać wiedzę o sztucznej inteligencji.</p>
             </div>
         </section>
 
-        <!-- Sekcja Kariera -->
         <section id="timeline" class="timeline">
             <h2>Kariera</h2>
             <div class="timeline-container">
@@ -59,7 +49,7 @@
                     <p>Odpowiedzialność za dokumentację i kontakt z klientami.</p>
                 </div>
                 <div class="timeline-item">
-                    <span class="icon">🧑‍💼</span>
+                    <span class="icon">👔</span>
                     <h3>2023 - 2024</h3>
                     <p><b>Asystent ds. administracji</b> – Ayses Polska</p>
                     <p>Zarządzanie raportami i optymalizacja procesów.</p>
@@ -72,12 +62,11 @@
             </div>
         </section>
 
-        <!-- Sekcja Umiejętności -->
         <section id="skills" class="skills">
             <h2>Umiejętności</h2>
             <div class="skills-container">
                 <div class="skill">
-                    <span class="icon">🔧</span>
+                    <span class="icon">🌐</span>
                     <p>HTML</p>
                 </div>
                 <div class="skill">
@@ -95,35 +84,24 @@
             </div>
         </section>
 
-        <!-- Sekcja Portfolio -->
         <section id="portfolio" class="portfolio">
             <h2>Portfolio</h2>
             <div class="portfolio-container">
-                <div class="portfolio-item">
+                <div class="project">
                     <h3>Projekt 1</h3>
-                    <p>Aplikacja mobilna</p>
+                    <p>Opis projektu 1</p>
                 </div>
-                <div class="portfolio-item">
+                <div class="project">
                     <h3>Projekt 2</h3>
-                    <p>System CRM</p>
+                    <p>Opis projektu 2</p>
                 </div>
-                <div class="portfolio-item">
+                <div class="project">
                     <h3>Projekt 3</h3>
-                    <p>Strona e-commerce</p>
+                    <p>Opis projektu 3</p>
                 </div>
             </div>
         </section>
 
-        <!-- Sekcja Wykształcenie -->
-        <section id="education" class="education">
-            <h2>Wykształcenie</h2>
-            <div class="education-container">
-                <p><b>2022 - obecnie:</b> Uniwersytet WSB Merito Warszawa – Informatyka</p>
-                <p><b>2018 - 2022:</b> Zespół Szkół nr 1 – Technik Informatyk</p>
-            </div>
-        </section>
-
-        <!-- Sekcja Kontakt -->
         <section id="contact" class="contact">
             <h2>Kontakt</h2>
             <form>
@@ -142,6 +120,12 @@
                 <button type="submit">Wyślij</button>
             </form>
         </section>
+
+        <section id="education" class="education">
+            <h2>Wykształcenie</h2>
+            <p>Studia wyższe: Informatyka – Uniwersytet X</p>
+            <p>Szkoła średnia: Zespół Szkół nr 1</p>
+        </section>
     </main>
 
     <footer>
@@ -150,5 +134,4 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>
