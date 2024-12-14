@@ -1,19 +1,14 @@
-// Toggle Dark Mode
-const toggleThemeButton = document.querySelector('#toggle-theme');
-const body = document.querySelector('body');
-const header = document.querySelector('header');
-const sections = document.querySelectorAll('.timeline-item, .skill, .project');
-
-toggleThemeButton.addEventListener('click', () => {
+// Funkcja zmiany trybu ciemnego/ jasnego
+document.querySelector('#toggle-theme').addEventListener('click', function() {
+    const body = document.body;
     body.classList.toggle('dark-mode');
-    header.classList.toggle('dark-mode');
-    sections.forEach(section => section.classList.toggle('dark-mode'));
-    
-    // Update button text
+
+    // Zmiana tekstu przycisku
+    const themeButton = document.querySelector('#toggle-theme');
     if (body.classList.contains('dark-mode')) {
-        toggleThemeButton.textContent = '🌞 Tryb jasny';
+        themeButton.textContent = '🌞 Tryb jasny';
     } else {
-        toggleThemeButton.textContent = '🌙 Tryb ciemny';
+        themeButton.textContent = '🌙 Tryb ciemny';
     }
 });
 
