@@ -20,69 +20,38 @@ body.dark-mode {
     color: #f0f0f0; /* light text */
 }
 
-/* Header */
-header {
-    background-color: #3498db;
-    padding: 20px;
-    text-align: center;
+/* Sections */
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #3498db;
+    border-bottom: 3px solid #3498db;
+    display: inline-block;
+    padding-bottom: 5px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
-header.dark-mode {
-    background-color: #34495e;
-}
-
-header a {
-    color: #fff;
-    margin: 0 20px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header a:hover {
-    text-decoration: underline;
-}
-
-button {
-    background-color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #3498db;
-    color: white;
-}
-
-button.dark-mode {
-    background-color: #2e2e2e;
-    color: #fff;
-}
-
-button.dark-mode:hover {
-    background-color: #34495e;
-}
-
-/* Hero Section */
+/* Section specific styles */
 .hero {
     background: linear-gradient(135deg, #3498db, #2ecc71);
     color: white;
-    padding: 80px 0;
+    padding: 100px 0;
     text-align: center;
-    margin-bottom: 50px;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 1.5rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .cta-buttons {
@@ -100,17 +69,6 @@ button.dark-mode:hover {
 .cta:hover {
     background-color: #3498db;
     color: white;
-}
-
-/* Section Title */
-h2 {
-    font-size: 2rem;
-    color: #3498db;
-    border-bottom: 3px solid #3498db;
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-bottom: 30px;
-    text-align: center;
 }
 
 /* About Section */
@@ -353,5 +311,3 @@ h2.dark-mode {
     background-color: #3498db;
     border-radius: 10px;
 }
-
-
