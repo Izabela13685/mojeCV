@@ -13,31 +13,39 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Ciemny tryb */
+/* Tryb ciemny */
 body.dark-mode {
-    background: #333;
-    color: #f1f1f1;
+    background-color: #2c3e50;
+    color: #ecf0f1;
 }
 
 body.dark-mode .hero {
-    background: linear-gradient(to left, #2c3e50, #34495e);
+    background: linear-gradient(to left, #34495e, #2c3e50);
 }
 
 body.dark-mode footer {
-    background-color: #2c3e50;
+    background-color: #34495e;
 }
 
-body.dark-mode nav {
+body.dark-mode .sticky-header {
     background-color: #34495e;
+}
+
+body.dark-mode nav a {
+    color: #ecf0f1;
+}
+
+body.dark-mode nav a:hover {
+    color: #3498db;
 }
 
 body.dark-mode button.theme-toggle {
     background-color: #34495e;
-    color: #fff;
+    color: #ecf0f1;
 }
 
-body.dark-mode .cta-buttons .cta {
-    background-color: #34495e;
+body.dark-mode button.theme-toggle:hover {
+    background-color: #3498db;
     color: #fff;
 }
 
@@ -47,6 +55,7 @@ body.dark-mode .cta-buttons .cta {
     color: white;
     padding: 100px 0;
     text-align: center;
+    border-bottom: 1px solid #3498db;
 }
 
 .hero h1 {
@@ -111,6 +120,7 @@ button.theme-toggle:hover {
 section {
     padding: 60px 0;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
 /* About Section */
@@ -136,15 +146,16 @@ section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .timeline-item {
     background-color: #ecf0f1;
     border-radius: 10px;
     padding: 20px;
-    margin: 15px;
     width: 30%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .timeline-item h3 {
@@ -162,21 +173,27 @@ section {
     color: #3498db;
 }
 
+body.dark-mode .timeline-item {
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
 /* Skills */
 .skills-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .skill {
     background-color: #ecf0f1;
     border-radius: 10px;
     padding: 20px;
-    margin: 15px;
     width: 30%;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .skill .icon {
@@ -189,21 +206,27 @@ section {
     margin-top: 10px;
 }
 
+body.dark-mode .skill {
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
 /* Portfolio */
 .portfolio-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .portfolio-item {
     background-color: #ecf0f1;
     border-radius: 10px;
     padding: 20px;
-    margin: 15px;
     width: 30%;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .portfolio-item h3 {
@@ -214,6 +237,11 @@ section {
 .portfolio-item p {
     font-size: 1rem;
     color: #7f8c8d;
+}
+
+body.dark-mode .portfolio-item {
+    background-color: #34495e;
+    color: #ecf0f1;
 }
 
 /* Contact */
@@ -271,14 +299,4 @@ footer {
 
 footer p {
     margin: 0;
-}
-
-footer p a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer p a {
-    color: #fff;
-    text-decoration: none;
 }
