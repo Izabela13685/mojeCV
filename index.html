@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Maja Szumaj</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Sticky Header -->
-    <header class="sticky-header">
-        <nav>
+    <!-- Nagłówek -->
+    <header class="header">
+        <nav class="navbar">
             <a href="#about">O mnie</a>
-            <a href="#timeline">Kariera</a>
+            <a href="#career">Kariera</a>
             <a href="#skills">Umiejętności</a>
             <a href="#portfolio">Portfolio</a>
-            <a href="#education">Wykształcenie</a>
             <a href="#contact">Kontakt</a>
             <button id="toggle-theme" class="theme-toggle">🌙 Tryb ciemny</button>
         </nav>
@@ -34,109 +33,73 @@
     </section>
 
     <main>
-        <!-- About Section -->
-        <section id="about" class="about">
+        <!-- Sekcja O mnie -->
+        <section id="about" class="section">
             <h2>O mnie</h2>
             <div class="about-container">
-                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Zdjęcie profilowe kobiety" class="profile">
-                <p>
-                    Jestem pasjonatką nowych technologii i projektowania UX/UI. Pracuję nad nowoczesnymi aplikacjami i optymalizacją procesów biznesowych. Po pracy lubię zgłębiać wiedzę o sztucznej inteligencji.
-                </p>
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Zdjęcie profilowe" class="profile">
+                <p>Jestem pasjonatką nowych technologii i projektowania UX/UI. Pracuję nad nowoczesnymi aplikacjami i optymalizacją procesów biznesowych. Po pracy zgłębiam wiedzę o sztucznej inteligencji.</p>
             </div>
         </section>
 
-        <!-- Timeline Section -->
-        <section id="timeline" class="timeline">
+        <!-- Sekcja Kariera -->
+        <section id="career" class="section">
             <h2>Kariera</h2>
-            <div class="timeline-container">
+            <div class="career-timeline">
                 <div class="timeline-item">
                     <span class="icon"><i class="fas fa-briefcase"></i></span>
-                    <div class="timeline-item-content">
-                        <h3>2021 - obecnie</h3>
-                        <p><b>Pracownik biurowy</b> – CNS Tadeusz Szuba</p>
-                        <p>Odpowiedzialność za dokumentację i kontakt z klientami.</p>
-                    </div>
+                    <h3>2021 - obecnie</h3>
+                    <p><strong>Pracownik biurowy</strong> – CNS Tadeusz Szuba</p>
+                    <p>Odpowiedzialność za dokumentację i kontakt z klientami.</p>
                 </div>
                 <div class="timeline-item">
                     <span class="icon"><i class="fas fa-user-tie"></i></span>
-                    <div class="timeline-item-content">
-                        <h3>2023 - 2024</h3>
-                        <p><b>Asystent ds. administracji</b> – Ayses Polska</p>
-                        <p>Zarządzanie raportami i optymalizacja procesów.</p>
-                    </div>
+                    <h3>2023 - 2024</h3>
+                    <p><strong>Asystent ds. administracji</strong> – Ayses Polska</p>
+                    <p>Zarządzanie raportami i optymalizacja procesów.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="icon"><i class="fas fa-graduation-cap"></i></span>
+                    <h3>2018 - 2022</h3>
+                    <p><strong>Technik Informatyk</strong> – Zespół Szkół nr 1</p>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="skills">
+        <!-- Sekcja Umiejętności -->
+        <section id="skills" class="section">
             <h2>Umiejętności</h2>
-            <div class="skills-list">
-                <ul>
-                    <li><b>HTML</b> – Tworzenie struktur stron internetowych</li>
-                    <li><b>CSS</b> – Stylizacja i animacje</li>
-                    <li><b>JavaScript</b> – Dynamiczne funkcjonalności</li>
-                    <li><b>React.js</b> – Tworzenie komponentowych aplikacji</li>
-                    <li><b>SEO</b> – Optymalizacja stron pod kątem wyszukiwarek</li>
-                    <li><b>WordPress</b> – Projektowanie i zarządzanie treścią</li>
-                    <li><b>Obsługa MS Office</b> – Pakiet biurowy na poziomie zaawansowanym</li>
-                </ul>
+            <div class="skills-container">
+                <div class="skill"><i class="fab fa-html5"></i> HTML</div>
+                <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
+                <div class="skill"><i class="fab fa-js"></i> JavaScript</div>
+                <div class="skill"><i class="fab fa-react"></i> React.js</div>
             </div>
         </section>
 
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="portfolio">
+        <!-- Sekcja Portfolio -->
+        <section id="portfolio" class="section">
             <h2>Portfolio</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/300x200" alt="Projekt 1">
-                    <h3>Aplikacja mobilna</h3>
-                    <p>Projekt aplikacji mobilnej w React Native.</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/300x200" alt="Projekt 2">
-                    <h3>System CRM</h3>
-                    <p>Stworzony system CRM do zarządzania klientami.</p>
-                </div>
+            <div class="portfolio-container">
+                <div class="portfolio-item">Aplikacja mobilna – Projekt w React Native</div>
+                <div class="portfolio-item">System CRM – Zarządzanie klientami</div>
+                <div class="portfolio-item">Strona e-commerce – Zintegrowane płatności</div>
             </div>
         </section>
 
-        <!-- Education Section -->
-        <section id="education" class="education">
-            <h2>Wykształcenie</h2>
-            <div class="timeline-container">
-                <div class="timeline-item">
-                    <span class="icon"><i class="fas fa-graduation-cap"></i></span>
-                    <div class="timeline-item-content">
-                        <h3>2022 - obecnie</h3>
-                        <p>Uniwersytet WSB Merito Warszawa</p>
-                        <p>Kierunek: Informatyka</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <span class="icon"><i class="fas fa-graduation-cap"></i></span>
-                    <div class="timeline-item-content">
-                        <h3>2018 - 2022</h3>
-                        <p>Zespół Szkół nr 1</p>
-                        <p>Specjalizacja: Technik Informatyk</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
+        <!-- Sekcja Kontakt -->
+        <section id="contact" class="section">
             <h2>Kontakt</h2>
-            <form>
-                <div class="field">
+            <form id="contact-form">
+                <div class="form-field">
                     <input type="text" id="name" required>
                     <label for="name">Twoje imię</label>
                 </div>
-                <div class="field">
+                <div class="form-field">
                     <input type="email" id="email" required>
                     <label for="email">Twój e-mail</label>
                 </div>
-                <div class="field">
+                <div class="form-field">
                     <textarea id="message" required></textarea>
                     <label for="message">Twoja wiadomość</label>
                 </div>
