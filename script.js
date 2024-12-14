@@ -1,20 +1,12 @@
-// Przełącznik trybu jasny/ciemny
-const toggleThemeButton = document.getElementById('toggle-theme');
-toggleThemeButton.addEventListener('click', () => {
+// Theme toggle functionality
+document.querySelector('#toggle-theme').addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
-    toggleThemeButton.textContent = document.body.classList.contains('dark-mode') ? '🌞 Tryb jasny' : '🌙 Tryb ciemny';
-});
-
-// Tryb ciemny
-document.addEventListener('DOMContentLoaded', () => {
-    if (localStorage.getItem('theme') === 'dark') {
-        document.body.classList.add('dark-mode');
-        toggleThemeButton.textContent = '🌞 Tryb jasny';
+    const themeButton = document.querySelector('#toggle-theme');
+    if (document.body.classList.contains('dark-mode')) {
+        themeButton.textContent = '🌞 Tryb jasny';
+    } else {
+        themeButton.textContent = '🌙 Tryb ciemny';
     }
 });
 
-toggleThemeButton.addEventListener('click', () => {
-    const isDarkMode = document.body.classList.toggle('dark-mode');
-    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-});
 
